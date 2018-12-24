@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default Suite]">
+  <test name="com.test">
+    <classes>
+      <class name="TestDemo.MySeleniumTest1"/>
+      <class name="TestDemo.AppTest"/>
+      <class name="TestDemo.BasePage"/>
+      <class name="TestDemo.BasePageTest"/>
+      <class name="TestDemo.CreateAccountTest"/>
+      <class name="TestDemo.ExtentDemo"/>
+      <class name="TestDemo.TestBase"/>
+    </classes>
+  </test> <!-- com.test -->
+  <test name="com.test(failed)">
+    <classes>
+      <class name="TestDemo.BasePageTest">
+        <methods>
+          <include name="verifyHomePage"/>
+          <include name="baseTest3"/>
+          <include name="baseTest1"/>
+          <include name="baseTest2"/>
+        </methods>
+      </class> <!-- TestDemo.BasePageTest -->
+      <class name="TestDemo.ExtentDemo">
+        <methods>
+          <include name="logDemo"/>
+          <include name="test1"/>
+        </methods>
+      </class> <!-- TestDemo.ExtentDemo -->
+      <class name="TestDemo.CreateAccountTest">
+        <methods>
+          <include name="createAccountExample1"/>
+          <include name="createAccountExample2"/>
+          <include name="verifyCreateAnAccountPage"/>
+        </methods>
+      </class> <!-- TestDemo.CreateAccountTest -->
+      <class name="TestDemo.MySeleniumTest1">
+        <methods>
+          <include name="test05"/>
+          <include name="test03"/>
+          <include name="rerunFailedCases"/>
+        </methods>
+      </class> <!-- TestDemo.MySeleniumTest1 -->
+    </classes>
+  </test> <!-- com.test(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

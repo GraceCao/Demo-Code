@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [All Test Suite]]">
+  <test verbose="2" name="TestCases">
+    <classes>
+      <class name="TestDemo.MySeleniumTest1"/>
+    </classes>
+  </test> <!-- TestCases -->
+  <test name="TestCases(failed)">
+    <classes>
+      <class name="TestDemo.MySeleniumTest1">
+        <methods>
+          <include name="test05"/>
+          <include name="test03"/>
+          <include name="rerunFailedCases"/>
+        </methods>
+      </class> <!-- TestDemo.MySeleniumTest1 -->
+    </classes>
+  </test> <!-- TestCases(failed) -->
+  <test name="TestCases(failed)">
+    <classes>
+      <class name="TestDemo.MySeleniumTest1">
+        <methods>
+          <include name="test05"/>
+          <include name="test03"/>
+          <include name="rerunFailedCases"/>
+          <include name="rerunFailedCases"/>
+        </methods>
+      </class> <!-- TestDemo.MySeleniumTest1 -->
+    </classes>
+  </test> <!-- TestCases(failed) -->
+  <test name="TestCases(failed)(failed)">
+    <classes>
+      <class name="TestDemo.MySeleniumTest1">
+        <methods>
+          <include name="test05"/>
+          <include name="test03"/>
+          <include name="rerunFailedCases"/>
+          <include name="rerunFailedCases"/>
+        </methods>
+      </class> <!-- TestDemo.MySeleniumTest1 -->
+    </classes>
+  </test> <!-- TestCases(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [All Test Suite]] -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Grace Test Suite]">
+  <parameter name="appURL" value="http://www.baidu.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="TestDemo.TestListener"/>
+  </listeners>
+  <test verbose="2" name="Test Cases">
+    <classes>
+      <class name="TestDemo.BasePageTest"/>
+    </classes>
+  </test> <!-- Test Cases -->
+  <test name="Test Cases(failed)">
+    <classes>
+      <class name="TestDemo.BasePageTest">
+        <methods>
+          <include name="verifyHomePage"/>
+          <include name="setUp"/>
+          <include name="initializeTestBaseSetup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- TestDemo.BasePageTest -->
+    </classes>
+  </test> <!-- Test Cases(failed) -->
+</suite> <!-- Failed suite [Grace Test Suite] -->
